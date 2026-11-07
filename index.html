@@ -1,219 +1,95 @@
+<!doctype html>
+<html lang="de"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Praxisorientierte Workshops und Entwicklungsprogramme für technische Projektleiter und Führungskräfte."><title>MW — Leadership & Project Excellence</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--navy:#101F30;--teal:#248B85;--soft:#B7D5D2;--white:#F3F5F6;--slate:#667786}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:95px}body{margin:0;color:var(--navy);background:var(--white);font-family:Inter,Arial,sans-serif;font-size:16px;line-height:1.7}h1,h2,h3,.brand{font-family:Manrope,Arial,sans-serif}a{color:inherit}header{background:var(--white);position:sticky;top:0;z-index:10;border-bottom:1px solid #101f3015}.nav{max-width:1280px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:23px 42px;gap:25px}.brand{text-decoration:none;display:flex;gap:16px;align-items:center}.monogram{font-size:32px;font-weight:800;letter-spacing:-4px;line-height:1;border-right:1px solid #101f3030;padding-right:20px}.brand small{font-size:10px;font-weight:700;line-height:1.6;letter-spacing:1.9px;display:block}nav{display:flex;gap:28px;align-items:center}nav a{font-size:12px;text-decoration:none;font-weight:600}nav .nav-cta{border:1px solid #101f3030;padding:9px 17px}.wrap{max-width:1196px;margin:auto;padding:0 42px}.hero{background:var(--navy);color:var(--white);overflow:hidden;position:relative}.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;min-height:650px;padding-top:85px;padding-bottom:85px}.eyebrow{text-transform:uppercase;font-size:10px;font-weight:600;letter-spacing:2.5px;display:flex;gap:13px;align-items:center}.eyebrow:before{content:'';height:1px;width:28px;background:var(--teal)}.hero .eyebrow{color:var(--soft)}h1{font-size:clamp(40px,4.7vw,66px);line-height:1.15;letter-spacing:-2.7px;font-weight:500;margin:30px 0 27px}h1 span{color:var(--soft)}.hero p{max-width:490px;color:#c0cbd3;font-size:15px;line-height:1.9}.actions{display:flex;flex-wrap:wrap;gap:24px;align-items:center;margin-top:35px}.button{display:inline-flex;align-items:center;gap:32px;text-decoration:none;background:var(--teal);color:white;font-size:12px;font-weight:600;padding:15px 22px;border:0}.text-link{font-size:12px;text-decoration:none;border-bottom:1px solid #b7d5d270;padding-bottom:4px}.art{aspect-ratio:1;position:relative;display:grid;place-items:center}.hero-brand{color:var(--white);gap:21px;white-space:nowrap}.hero-brand .monogram{font-size:82px;letter-spacing:-10.25px;padding-right:27px;border-right:1px solid #f3f5f650}.hero-brand small{font-size:12px;letter-spacing:2.1px;line-height:1.6}.strip{border-bottom:1px solid #101f301a}.strip .wrap{display:flex;gap:45px;justify-content:space-between;padding-top:23px;padding-bottom:23px;color:var(--slate);font-size:11px;letter-spacing:.5px}.strip strong{font-weight:500;color:var(--navy)}section{padding:100px 0}.section-intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end;margin-bottom:48px}h2{font-size:clamp(30px,3vw,43px);line-height:1.25;letter-spacing:-1.5px;font-weight:500;margin:19px 0 0}.section-intro p{font-size:14px;color:var(--slate);margin:0}.offers{display:grid;grid-template-columns:1fr 1fr;gap:25px}.offer{padding:38px;background:white;border-top:3px solid var(--teal);display:flex;flex-direction:column}.offer.alt{background:#e6eeed;border-color:var(--soft)}.number{font-size:10px;letter-spacing:2px;color:var(--slate)}.offer h3{font-size:27px;line-height:1.25;letter-spacing:-.8px;margin:24px 0 13px}.offer .tagline{font-size:14px;font-weight:600;margin:0 0 22px}.offer p{font-size:13px;color:var(--slate);margin:0}.offer ul{list-style:none;padding:0;margin:26px 0 30px}.offer li{border-top:1px solid #101f3015;padding:11px 0;font-size:12px}.offer li:before{content:'↗';margin-right:12px;color:var(--teal)}.offer a{font-size:12px;text-decoration:none;font-weight:600;margin-top:auto;align-self:flex-start;border-bottom:1px solid var(--teal);padding-bottom:5px}.approach{background:white}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:50px}.principle{border-top:1px solid #101f3030;padding-top:22px}.principle span{color:var(--teal);font-size:11px}.principle h3{font-size:20px;font-weight:500;margin:17px 0 13px}.principle p{font-size:13px;color:var(--slate);margin:0}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:100px;align-items:center}.about-visual{background:var(--navy);min-height:380px;padding:40px;display:flex;flex-direction:column;justify-content:space-between;color:var(--soft)}.about-visual .large-mw{font-family:Manrope;font-size:100px;font-weight:800;letter-spacing:-12px}.about-visual blockquote{margin:0;font-family:Manrope;font-size:27px;line-height:1.4;font-weight:400}.about-visual small{font-size:9px;letter-spacing:2px}.about-copy p{font-size:14px;color:var(--slate)}.credentials{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.credentials span{font-size:10px;border:1px solid #101f3020;padding:7px 11px}.contact{background:var(--soft);text-align:center;padding:85px 0}.contact .eyebrow{justify-content:center}.contact h2{max-width:650px;margin:22px auto}.contact p{font-size:14px;max-width:540px;margin:20px auto;color:#425b63}footer{background:var(--navy);color:#bac6ce;padding:30px 0}.footer-grid{display:flex;justify-content:space-between;gap:25px;align-items:center}footer small{font-size:10px}.draft{position:fixed;bottom:14px;right:16px;z-index:20;background:#fff;color:var(--navy);border:1px solid #101f3020;padding:6px 12px;font-size:10px;box-shadow:0 3px 15px #101f3010}a:focus-visible{outline:3px solid var(--teal);outline-offset:5px}@media(max-width:800px){.nav{padding:18px 24px}.brand small{font-size:8px}nav{gap:16px}nav .nav-cta{display:none}.wrap{padding-left:24px;padding-right:24px}.hero-grid{grid-template-columns:1fr;min-height:auto;padding-top:65px;padding-bottom:55px}.art{display:none}h1{letter-spacing:-1.7px}.strip .wrap{gap:14px;flex-wrap:wrap}.section-intro,.about-grid{grid-template-columns:1fr;gap:28px}.offers{grid-template-columns:1fr}.principles{grid-template-columns:1fr;gap:28px}section{padding:65px 0}.about-visual{min-height:300px}.footer-grid{flex-direction:column;align-items:flex-start}.offer{padding:28px}.draft{font-size:9px}.nav nav a{font-size:10px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.contact-open{margin-top:12px}
+.contact-open,.contact-dialog button{cursor:pointer}
+.contact-dialog{width:min(540px,calc(100% - 32px));max-height:calc(100% - 32px);padding:clamp(20px,5vw,36px);border:0;background:var(--white);color:var(--navy);box-shadow:0 16px 48px #101f304d}
+.contact-dialog::backdrop{background:#101f30b3}
+.contact-dialog h2{margin:0;font-size:clamp(24px,4vw,34px)}
+.contact-dialog p{font-size:14px;margin:10px 0}
+.contact-dialog .dialog-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.contact-dialog .close{border:1px solid #101f3040;background:transparent;color:inherit;font:inherit;padding:2px 12px}
+.contact-dialog form{display:grid;gap:12px;margin-top:18px}
+.contact-dialog label{display:grid;gap:4px;font-size:14px;font-weight:600}
+.contact-dialog :is(input,select,textarea){width:100%;padding:9px 10px;border:1px solid #667786;background:#fff;color:inherit;font:inherit;font-size:16px;border-radius:0}
+.contact-dialog textarea{resize:vertical}
+.contact-dialog .help{margin:0;font-size:13px}
+.contact-dialog .template{justify-self:start;padding:0;border:0;background:none;color:inherit;text-decoration:underline;font:inherit;font-size:13px}
+.contact-dialog .test-note{margin:8px 0 0;padding:8px 12px;background:var(--soft);font-size:13px}
+.contact-dialog .button,.contact-open{background:#176d68;justify-self:start}
+button:focus-visible,.contact-dialog :is(input,select,textarea):focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+</style></head><body>
+<header><div class="nav"><a class="brand" href="#start" aria-label="MW Startseite"><span class="monogram">MW</span><small>LEADERSHIP<br>& PROJECT EXCELLENCE</small></a><nav aria-label="Hauptnavigation"><a href="#angebote">Leistungen</a><a href="#ueber-mich">Über mich</a><a class="nav-cta" href="#kontakt">Ins Gespräch kommen ↗</a></nav></div></header>
+<main><div class="hero" id="start"><div class="wrap hero-grid"><div><div class="eyebrow">Leadership & Project Excellence</div><h1>Führung, die inspiriert.<br><span>Projekte, die liefern.</span></h1><p>Praxisorientierte Workshops und Entwicklungsprogramme für technische Projektleiter und Führungskräfte im DACH-Mittelstand.</p><div class="actions"><a class="button" href="#angebote">Leistungen entdecken <span>↗</span></a><a class="text-link" href="#ueber-mich">Den Ansatz kennenlernen</a></div></div><div class="art"><div class="brand hero-brand" aria-label="MW Leadership &amp; Project Excellence"><span class="monogram">MW</span><small>LEADERSHIP<br>&amp; PROJECT EXCELLENCE</small></div></div></div></div>
+<div class="strip"><div class="wrap"><span><strong>Projektführung</strong> über Organisationsgrenzen</span><span><strong>Leadership</strong> in technischen Teams</span><span><strong>Transfer</strong> in den Arbeitsalltag</span></div></div>
+<section id="angebote"><div class="wrap"><div class="section-intro"><div><div class="eyebrow">Zwei Perspektiven. Ein Anspruch.</div><h2>Menschen führen.<br>Umsetzung ermöglichen.</h2></div><p>Wenn Fachwissen allein nicht mehr reicht, wird Führung entscheidend. Die Angebote verbinden methodische Klarheit mit den Herausforderungen technischer Organisationen.</p></div><div class="offers"><article class="offer"><span class="number">01 / PROJEKTE FÜHREN</span><h3>Project Leadership Lab</h3><div class="tagline">Komplexe Projekte souverän führen.</div><p>Für technische Projektleiter, PMOs und Fachbereiche, die Stakeholder verbinden, Entscheidungen voranbringen und Verantwortung wirksam gestalten möchten.</p><ul><li>Führen ohne Weisungsbefugnis</li><li>Stakeholder, Konflikte und Eskalationen</li><li>Entscheidungen und Prioritäten im Projekt</li></ul><a href="#kontakt">Workshop gemeinsam besprechen ↗</a></article><article class="offer alt"><span class="number">02 / MENSCHEN FÜHREN</span><h3>Tech Leadership Academy</h3><div class="tagline">Vom Experten zur Führungskraft.</div><p>Für technische Experten und angehende Führungskräfte, die ihren Rollenwechsel bewusst gestalten und einen eigenen Führungsstil entwickeln möchten.</p><ul><li>Rollenklärung und persönliche Wirksamkeit</li><li>Kommunikation, Feedback und Delegation</li><li>Teamführung und persönlicher Transferplan</li></ul><a href="#kontakt">Entwicklungsbedarf besprechen ↗</a></article></div></div></section>
+<section class="approach"><div class="wrap"><div class="eyebrow">Der Ansatz</div><h2>Praxis. Verantwortung. Wirkung.</h2><div class="principles"><article class="principle"><span>01</span><h3>An echten Situationen arbeiten.</h3><p>Konkrete Herausforderungen aus dem Führungs- und Projektalltag bilden den Ausgangspunkt für Übungen und Reflexion.</p></article><article class="principle"><span>02</span><h3>Klarheit ins Handeln bringen.</h3><p>Strukturierte Methoden helfen, Interessen einzuordnen, Optionen abzuwägen und nächste Schritte zu definieren.</p></article><article class="principle"><span>03</span><h3>Den Transfer mitdenken.</h3><p>Aus Erkenntnissen werden persönliche Vorhaben, die im eigenen Team und Projektkontext angewendet werden können.</p></article></div></div></section>
+<section id="ueber-mich"><div class="wrap about-grid"><div class="about-visual"><small>MW / PERSÖNLICHER ANSATZ</small><div class="large-mw" aria-hidden="true">MW</div><blockquote>Führung verstehen.<br>Verantwortung übernehmen.<br>Umsetzung gestalten.</blockquote></div><div class="about-copy"><div class="eyebrow">Über mich</div><h2>Projektpraxis trifft<br>Führungserfahrung.</h2><p>Meine Perspektive auf Führung beruht auf mehr als zehn Jahren Berufserfahrung, davon über fünf in der Managementberatung. Internationale SAP-Implementierungen, die Verantwortung für Projekte und die Leitung einer Corporate-IT-Abteilung haben meinen Blick dafür geschärft, was Teams brauchen, um auch in komplexen Situationen handlungsfähig zu bleiben.</p><p>Als IPMA-Level-B-zertifizierter Projektmanager verbinde ich strukturiertes Projektmanagement mit eigener disziplinarischer Führungserfahrung.</p><p>Mit MW Leadership & Project Excellence entwickle ich praxisorientierte Trainings für Menschen, die in technischen Organisationen Verantwortung übernehmen – für Projekte, für Teams und für Veränderung.</p><div class="credentials"><span>IPMA Level B</span><span>Internationale Projektpraxis</span><span>Corporate IT Leadership</span></div></div></div></section>
+<section class="contact" id="kontakt"><div class="wrap"><div class="eyebrow">Der nächste Schritt</div><h2>Lass uns über deine<br>Herausforderung sprechen.</h2><p>Ob Projektführung oder die Entwicklung technischer Führungskräfte: Ein unverbindliches Erstgespräch schafft Raum für deinen Bedarf und ein passendes Format.</p><button class="button contact-open" id="contact-open" type="button" aria-haspopup="dialog">Erstgespräch anfragen <span aria-hidden="true">↗</span></button></div></section></main>
+<footer><div class="wrap footer-grid"><a class="brand" href="#start"><span class="monogram">MW</span><small>LEADERSHIP<br>& PROJECT EXCELLENCE</small></a><small>Impressum und Datenschutzhinweise werden vor Veröffentlichung ergänzt.</small></div></footer><div class="draft">DESIGNENTWURF · NICHT VERÖFFENTLICHT</div><dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-title" aria-describedby="contact-intro contact-preview">
+  <div class="dialog-head">
+    <h2 id="contact-title">Unverbindliches Erstgespräch</h2>
+    <button class="close" type="button" id="contact-close" aria-label="Formular schließen">×</button>
+  </div>
+  <p id="contact-intro">Worum geht es bei dir? Ein Stichwort reicht, den Rest klären wir im Gespräch.</p>
+  <p id="contact-preview" class="test-note">Testformular. Deine Eingaben werden weder gespeichert noch versendet.</p>
+  <form id="contact-form" method="dialog">
+    <label>Dein Name (optional)<input type="text" name="name" autocomplete="name" maxlength="120"></label>
+    <label>Deine E-Mail-Adresse (Pflichtfeld)<input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+    <label>Worum geht es?
+      <select id="contact-topic" name="topic">
+        <option value="open">Ich bin noch unsicher</option>
+        <option value="project">Project Leadership Lab</option>
+        <option value="tech">Tech Leadership Academy</option>
+        <option value="other">Ein anderes Anliegen</option>
+      </select>
+    </label>
+    <label>Dein Anliegen (optional)<textarea id="contact-message" name="message" rows="3" maxlength="2000" aria-describedby="contact-help"></textarea></label>
+    <p class="help" id="contact-help">Was möchtest du mit deinem Team oder in deinem Projekt erreichen?</p>
+    <button type="button" class="template" id="contact-template">Textvorschlag übernehmen</button>
+    <button type="submit" class="button">Anfrage testen</button>
+    <div id="contact-result" role="status"></div>
+  </form>
+</dialog>
+<script>
+  const contactDialog = document.getElementById('contact-dialog');
+  const contactOpen = document.getElementById('contact-open');
+  const contactForm = document.getElementById('contact-form');
+  const contactTopic = document.getElementById('contact-topic');
+  const contactMessage = document.getElementById('contact-message');
+  const contactResult = document.getElementById('contact-result');
 
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>Leadership Excellence Check</title>
-  <style>
-    * { box-sizing: border-box; }
+  const contactTemplates = {
+    open: 'Ich möchte besprechen, welches Format zu unserer Herausforderung passt. Es geht um …',
+    project: 'Wir suchen einen Workshop für unsere Projektleiter. Im Projektalltag möchten wir vor allem …',
+    tech: 'Wir möchten technische Fachkräfte beim Einstieg in die Führung unterstützen. Besonders wichtig ist uns …',
+    other: 'Ich würde mich gerne über folgendes Thema austauschen: …'
+  };
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f3f6fb;
-      color: #17253e;
-      margin: 0;
-      padding: 30px 16px;
-    }
+  contactOpen.addEventListener('click', () => contactDialog.showModal());
+  document.getElementById('contact-close').addEventListener('click', () => contactDialog.close());
+  contactDialog.addEventListener('close', () => {
+    contactForm.reset();
+    contactResult.textContent = '';
+    contactResult.classList.remove('test-note');
+    contactOpen.focus();
+  });
+  document.getElementById('contact-template').addEventListener('click', () => {
+    if (!contactMessage.value.trim()) contactMessage.value = contactTemplates[contactTopic.value];
+    contactMessage.focus();
+    contactMessage.setSelectionRange(contactMessage.value.length, contactMessage.value.length);
+  });
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    contactResult.classList.add('test-note');
+    contactResult.textContent = 'Der Test war erfolgreich. Es wurde keine Anfrage versendet.';
+  });
+</script>
+</body></html>
 
-    .container {
-      max-width: 650px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 18px;
-      box-shadow: 0 8px 30px #13294b15;
-    }
 
-    .subtitle { color: #64748b; }
 
-    h1 { margin-bottom: 10px; }
 
-    .question {
-      margin: 25px 0;
-      padding-bottom: 15px;
-      border-bottom: 1px solid #e2e8f0;
-    }
 
-    .question label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    .question p {
-      color: #64748b;
-      font-size: 14px;
-    }
-
-    input[type=range] { width: 100%; }
-
-    button {
-      background: #1d4ed8;
-      color: white;
-      border: none;
-      padding: 15px;
-      width: 100%;
-      border-radius: 9px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover { background: #1e40af; }
-
-    #result {
-      display: none;
-      background: #eff6ff;
-      padding: 20px;
-      margin-top: 25px;
-      border-radius: 12px;
-    }
-
-    .score {
-      font-size: 38px;
-      font-weight: bold;
-      color: #1d4ed8;
-    }
-
-    .note {
-      font-size: 12px;
-      color: #64748b;
-      margin-top: 25px;
-    }
-  </style>
-</head>
-<body>
-
-  <main class="container">
-    <h1>Leadership Excellence Check</h1>
-    <p class="subtitle">
-      Bewerte deine Führungs- und Projektpraktiken
-      auf einer Skala von 1 bis 5.
-    </p>
-
-    <div id="questions"></div>
-
-    <button onclick="calculate()">
-      Mein Ergebnis anzeigen
-    </button>
-
-    <section id="result" aria-live="polite">
-      <h2>Dein Ergebnis</h2>
-      <div id="score" class="score"></div>
-      <p id="message"></p>
-      <p id="recommendation"></p>
-    </section>
-
-    <p class="note">
-      Demo-Selbstcheck. Keine wissenschaftlich
-      validierte Diagnostik.
-    </p>
-  </main>
-
-  <script>
-    const questions = [
-      {
-        name: "Klare Ziele",
-        text: "Mein Team kennt unsere wichtigsten Ziele."
-      },
-      {
-        name: "Kommunikation",
-        text: "Ich kommuniziere offen und regelmäßig."
-      },
-      {
-        name: "Verantwortung",
-        text: "Rollen und Zuständigkeiten sind klar."
-      },
-      {
-        name: "Feedback",
-        text: "Ich gebe regelmäßig hilfreiches Feedback."
-      },
-      {
-        name: "Projektsteuerung",
-        text: "Wir erkennen Risiken und Probleme frühzeitig."
-      }
-    ];
-
-    const container =
-      document.getElementById("questions");
-
-    questions.forEach((question, index) => {
-      const div = document.createElement("div");
-      div.className = "question";
-
-      const label = document.createElement("label");
-      label.htmlFor = "q" + index;
-      label.textContent = question.name;
-
-      const description = document.createElement("p");
-      description.textContent = question.text;
-
-      const slider = document.createElement("input");
-      slider.type = "range";
-      slider.min = "1";
-      slider.max = "5";
-      slider.value = "3";
-      slider.id = "q" + index;
-
-      const value = document.createElement("span");
-      value.textContent = "3 / 5";
-
-      slider.addEventListener("input", () => {
-        value.textContent = slider.value + " / 5";
-        document.getElementById("result")
-          .style.display = "none";
-      });
-
-      div.append(label, description, slider, value);
-      container.appendChild(div);
-    });
-
-    function calculate() {
-      let total = 0;
-      let lowest = 6;
-      let weakest = "";
-
-      questions.forEach((question, index) => {
-        const value = Number(
-          document.getElementById("q" + index).value
-        );
-
-        total += value;
-
-        if (value < lowest) {
-          lowest = value;
-          weakest = question.name;
-        }
-      });
-
-      const percentage = Math.round(total / 25 * 100);
-
-      let message = "";
-
-      if (percentage >= 80) {
-        message = "Starke Ausgangsbasis!";
-      } else if (percentage >= 56) {
-        message = "Gute Entwicklungsmöglichkeiten.";
-      } else {
-        message = "Deutliches Verbesserungspotenzial.";
-      }
-
-      document.getElementById("score")
-        .textContent = percentage + " %";
-
-      document.getElementById("message")
-        .textContent = message;
-
-      document.getElementById("recommendation")
-        .textContent =
-          "Dein größter Entwicklungsbereich: " +
-          weakest +
-          ". Definiere hier eine konkrete Maßnahme.";
-
-      document.getElementById("result")
-        .style.display = "block";
-    }
-  </script>
-</body>
-</html>
