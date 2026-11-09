@@ -30,6 +30,12 @@ button:focus-visible,.contact-dialog :is(input,select,textarea):focus-visible{ou
 .offer-toggle{margin-top:auto;align-self:flex-start;padding:0 0 5px;border:0;border-bottom:1px solid var(--teal);background:transparent;color:inherit;font:inherit;font-size:12px;font-weight:600;text-align:left;cursor:pointer}
 .offer-toggle .when-open,.offer-toggle[aria-expanded="true"] .when-closed{display:none}
 .offer-toggle[aria-expanded="true"] .when-open{display:inline}
+.offer{position:relative}
+.offer-toggle::before{content:"";position:absolute;inset:-3px 0 0;cursor:pointer}
+.offer:has(.offer-toggle:focus-visible){outline:3px solid #176d68;outline-offset:4px}
+.offer:has(.offer-toggle[aria-expanded="true"]){background:var(--soft);border-top-color:#176d68;box-shadow:inset 0 0 0 1px #176d68}
+.offer:has(.offer-toggle[aria-expanded="true"]) :is(p,.number){color:#324c54}
+@media(hover:hover){.offer:hover{border-top-color:#176d68}}
 .offer-toggle::after{content:"+";margin-left:12px}
 .offer-toggle[aria-expanded="true"]::after{content:"−"}
 .offer-detail ol{padding-left:24px}
