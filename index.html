@@ -20,11 +20,62 @@
 .contact-dialog .test-note{margin:8px 0 0;padding:8px 12px;background:var(--soft);font-size:13px}
 .contact-dialog .button,.contact-open{background:#176d68;justify-self:start}
 button:focus-visible,.contact-dialog :is(input,select,textarea):focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.offer-detail{margin-top:48px;padding:clamp(24px,5vw,56px);background:#fff;border-top:3px solid var(--teal)}
+.offer-detail h3{font-size:clamp(25px,3.2vw,37px);font-weight:500;line-height:1.25;margin:12px 0 18px}
+.offer-detail h4{font-size:18px;margin:30px 0 10px}
+.offer-detail p,.offer-detail li{max-width:76ch;font-size:15px}
+.offer-detail ul{padding-left:21px}
+.offer-detail li+li{margin-top:10px}
+.offer-detail .button{cursor:pointer;background:#176d68;margin-top:8px}
+.offer-toggle{margin-top:auto;align-self:flex-start;padding:0 0 5px;border:0;border-bottom:1px solid var(--teal);background:transparent;color:inherit;font:inherit;font-size:12px;font-weight:600;text-align:left;cursor:pointer}
+.offer-toggle .when-open,.offer-toggle[aria-expanded="true"] .when-closed{display:none}
+.offer-toggle[aria-expanded="true"] .when-open{display:inline}
+.offer-toggle::after{content:"+";margin-left:12px}
+.offer-toggle[aria-expanded="true"]::after{content:"−"}
+.offer-detail ol{padding-left:24px}
 </style></head><body>
 <header><div class="nav"><a class="brand" href="#start" aria-label="MW Startseite"><span class="monogram">MW</span><small>LEADERSHIP<br>& PROJECT EXCELLENCE</small></a><nav aria-label="Hauptnavigation"><a href="#angebote">Leistungen</a><a href="#ueber-mich">Über mich</a><a class="nav-cta" href="#kontakt">Ins Gespräch kommen ↗</a></nav></div></header>
 <main><div class="hero" id="start"><div class="wrap hero-grid"><div><div class="eyebrow">Leadership & Project Excellence</div><h1>Führung, die inspiriert.<br><span>Projekte, die liefern.</span></h1><p>Praxisorientierte Workshops und Entwicklungsprogramme für technische Projektleiter und Führungskräfte im DACH-Mittelstand.</p><div class="actions"><a class="button" href="#angebote">Leistungen entdecken <span>↗</span></a><a class="text-link" href="#ueber-mich">Den Ansatz kennenlernen</a></div></div><div class="art"><div class="brand hero-brand" aria-label="MW Leadership &amp; Project Excellence"><span class="monogram">MW</span><small>LEADERSHIP<br>&amp; PROJECT EXCELLENCE</small></div></div></div></div>
 <div class="strip"><div class="wrap"><span><strong>Projektführung</strong> über Organisationsgrenzen</span><span><strong>Leadership</strong> in technischen Teams</span><span><strong>Transfer</strong> in den Arbeitsalltag</span></div></div>
-<section id="angebote"><div class="wrap"><div class="section-intro"><div><div class="eyebrow">Zwei Perspektiven. Ein Anspruch.</div><h2>Menschen führen.<br>Umsetzung ermöglichen.</h2></div><p>Wenn Fachwissen allein nicht mehr reicht, wird Führung entscheidend. Die Angebote verbinden methodische Klarheit mit den Herausforderungen technischer Organisationen.</p></div><div class="offers"><article class="offer"><span class="number">01 / PROJEKTE FÜHREN</span><h3>Project Leadership Lab</h3><div class="tagline">Komplexe Projekte souverän führen.</div><p>Für technische Projektleiter, PMOs und Fachbereiche, die Stakeholder verbinden, Entscheidungen voranbringen und Verantwortung wirksam gestalten möchten.</p><ul><li>Führen ohne Weisungsbefugnis</li><li>Stakeholder, Konflikte und Eskalationen</li><li>Entscheidungen und Prioritäten im Projekt</li></ul><a href="#kontakt">Workshop gemeinsam besprechen ↗</a></article><article class="offer alt"><span class="number">02 / MENSCHEN FÜHREN</span><h3>Tech Leadership Academy</h3><div class="tagline">Vom Experten zur Führungskraft.</div><p>Für technische Experten und angehende Führungskräfte, die ihren Rollenwechsel bewusst gestalten und einen eigenen Führungsstil entwickeln möchten.</p><ul><li>Rollenklärung und persönliche Wirksamkeit</li><li>Kommunikation, Feedback und Delegation</li><li>Teamführung und persönlicher Transferplan</li></ul><a href="#kontakt">Entwicklungsbedarf besprechen ↗</a></article></div></div></section>
+<section id="angebote"><div class="wrap"><div class="section-intro"><div><div class="eyebrow">Zwei Perspektiven. Ein Anspruch.</div><h2>Menschen führen.<br>Umsetzung ermöglichen.</h2></div><p>Wenn Fachwissen allein nicht mehr reicht, wird Führung entscheidend. Die Angebote verbinden methodische Klarheit mit den Herausforderungen technischer Organisationen.</p></div><div class="offers"><article class="offer"><span class="number">01 / PROJEKTE FÜHREN</span><h3>Project Leadership Lab</h3><div class="tagline">Komplexe Projekte souverän führen.</div><p>Für Projektleiterinnen und Projektleiter, die Stakeholder verbinden, Entscheidungen voranbringen und Verantwortung wirksam gestalten möchten.</p><ul><li>Führen ohne Weisungsbefugnis</li><li>Stakeholder, Konflikte und Eskalationen</li><li>Entscheidungen und Prioritäten im Projekt</li></ul><button type="button" class="offer-toggle" aria-expanded="false" aria-controls="project-leadership-lab"><span class="when-closed">Projektmanagement-Coaching ansehen</span><span class="when-open">Projektmanagement-Coaching schließen</span></button></article><article class="offer alt"><span class="number">02 / MENSCHEN FÜHREN</span><h3>Tech Leadership Academy</h3><div class="tagline">Vom Experten zur Führungskraft.</div><p>Für technische Experten und angehende Führungskräfte, die ihren Rollenwechsel bewusst gestalten und einen eigenen Führungsstil entwickeln möchten.</p><ul><li>Rollenklärung und persönliche Wirksamkeit</li><li>Kommunikation, Feedback und Delegation</li><li>Teamführung und persönlicher Transferplan</li></ul><button type="button" class="offer-toggle" aria-expanded="false" aria-controls="tech-leadership-academy"><span class="when-closed">Leadership-Coaching ansehen</span><span class="when-open">Leadership-Coaching schließen</span></button></article></div>
+<article id="project-leadership-lab" class="offer-detail" aria-labelledby="lab-title" hidden>
+  <div class="eyebrow">Project Leadership Lab</div>
+  <h3 id="lab-title">Projektmanagement-Coaching am eigenen Projekt</h3>
+  <p>Du übernimmst ein neues Projekt, musst widersprüchliche Erwartungen klären oder willst ein laufendes Vorhaben wieder auf Kurs bringen? Im Project Leadership Lab arbeitest du an deinem konkreten Projekt. Gemeinsam klären wir, was als Nächstes entschieden werden muss und welche Werkzeuge dir dabei helfen.</p>
+  <p><strong>Für Projektleiterinnen und Projektleiter</strong>, die erstmals ein Vorhaben verantworten oder ein komplexes Projekt in IT, Engineering oder Transformation steuern.</p>
+  <h4>Woran wir arbeiten</h4>
+  <ul>
+    <li><strong>Projektauftrag und Vorgehen klären.</strong> Wir schärfen Ziele, Umfang und Erfolgskriterien und wählen ein Vorgehen, das zum Projekt passt. Das Ergebnis kann ein Projektsteckbrief sein, den du mit deinem Auftraggeber abstimmst.</li>
+    <li><strong>Rollen und Stakeholder sortieren.</strong> Wir klären, wer entscheidet, wer mitarbeitet und wer wann informiert werden muss. Daraus entstehen je nach Bedarf eine Verantwortungsmatrix, eine Stakeholder-Übersicht oder ein Kommunikationsplan.</li>
+    <li><strong>Planung und Steuerung verbessern.</strong> Wir machen Meilensteine, Abhängigkeiten und Ressourcen sichtbar. Für ein laufendes Projekt kannst du daraus einen Statusbericht entwickeln, der Fortschritt, Risiken und anstehende Entscheidungen auf den Punkt bringt.</li>
+  </ul>
+  <h4>So läuft das Coaching ab</h4>
+  <p><strong>Im 1:1</strong> bringst du dein Projekt und eine aktuelle Frage mit. Wir wählen eine passende Methode, wenden sie auf deinen Fall an und halten fest, was du bis zum nächsten Termin umsetzen willst. Beim nächsten Gespräch schauen wir darauf, was funktioniert hat und wo du nachschärfen möchtest.</p>
+  <p><strong>In der Gruppe</strong> arbeiten mehrere Projektleitende an einem gemeinsamen Vorhaben oder an eigenen Projektfällen. Ihr erprobt dieselbe Methode, gebt euch Feedback und entwickelt Lösungen, die ihr in euren Projekten einsetzen könnt.</p>
+  <h4>Unverbindliches Erstgespräch</h4>
+  <p>Ein kurzer Hinweis auf dein Projekt und deine aktuelle Herausforderung reicht. Im Erstgespräch klären wir, welches Thema zuerst dran ist und ob ein 1:1 oder ein Gruppenformat besser zu eurem Bedarf passt.</p>
+  <button type="button" class="button" data-contact-topic="project" aria-haspopup="dialog">Erstgespräch anfragen <span aria-hidden="true">↗</span></button>
+</article>
+<article id="tech-leadership-academy" class="offer-detail" aria-labelledby="academy-title" hidden>
+  <div class="eyebrow">Tech Leadership Academy</div>
+  <h3 id="academy-title">1:1-Coaching für deine erste Führungsrolle</h3>
+  <p>Du übernimmst zum ersten Mal Führungsverantwortung oder bereitest dich darauf vor? Im Coaching der Tech Leadership Academy arbeitest du an Situationen, die dir in dieser Rolle begegnen: Erwartungen klären, Entscheidungen treffen und Verantwortung so übertragen, dass andere selbstständig handeln können.</p>
+  <p><strong>Für Fachkräfte aus IT, Engineering und anderen technischen Bereichen</strong>, die sich auf eine Führungsrolle vorbereiten oder bereits ein Team führen und ihren eigenen Führungsstil entwickeln möchten.</p>
+  <h4>Woran wir arbeiten</h4>
+  <ol>
+    <li><strong>Dich selbst führen.</strong> Du klärst, was gute Führung für dich bedeutet, welche Stärken du mitbringst und wo du dich weiterentwickeln möchtest. Daraus leitest du ab, wie du in schwierigen Situationen handeln willst und woran dein Team diese Haltung erkennen kann.</li>
+    <li><strong>Prioritäten setzen und Entscheidungen treffen.</strong> Du schärfst das Ziel hinter einer Aufgabe, wägst Optionen ab und legst fest, wer den nächsten Schritt übernimmt. Wir arbeiten dabei an einer aktuellen Entscheidung aus deinem Alltag, etwa wenn mehrere Anliegen gleichzeitig dringend erscheinen oder dir noch Informationen fehlen.</li>
+    <li><strong>Mitarbeitende führen und entwickeln.</strong> Du übst, Erwartungen klar zu formulieren, Aufgaben mit passendem Handlungsspielraum zu delegieren und Entwicklungsgespräche zu führen. Dafür kannst du eine konkrete Situation mitbringen, etwa ein Gespräch, in dem du mehr Eigenverantwortung ermöglichen möchtest.</li>
+    <li><strong>Teams führen.</strong> Du entwickelst mit deinem Team ein gemeinsames Ziel und klärst, wie ihr zusammenarbeiten und Entscheidungen treffen wollt. Im Coaching bereitest du dafür eine konkrete Situation vor, etwa einen Teamstart, die Klärung unklarer Zuständigkeiten oder ein Gespräch über Spannungen im Team.</li>
+    <li><strong>Organisationen strategisch lenken.</strong> Du übersetzt die Strategie deiner Organisation in klare Prioritäten für deinen Verantwortungsbereich. An einem konkreten Vorhaben arbeitest du heraus, welche Bereiche du einbinden musst, wo Zielkonflikte bestehen und woran ihr erkennt, ob die Veränderung wirkt.</li>
+  </ol>
+  <h4>So läuft das Coaching ab</h4>
+  <p>Zu Beginn klären wir, was sich in deinem Führungsalltag konkret verbessern soll. In den folgenden Gesprächen bringst du eine aktuelle Situation mit. Gemeinsam bereitest du mit mir ein Gespräch, eine Entscheidung oder eine Delegation vor und erprobst deinen nächsten Schritt im Alltag. Beim nächsten Termin schauen wir, wie dein Gegenüber reagiert hat und was du daraus für ähnliche Situationen ableitest.</p>
+  <h4>Unverbindliches Erstgespräch</h4>
+  <p>Erzähl mir kurz, wo du gerade stehst und welche Führungssituation dich beschäftigt. Im Erstgespräch klären wir, ob das Coaching zu dir passt und womit du beginnen könntest.</p>
+  <button type="button" class="button" data-contact-topic="tech" aria-haspopup="dialog">Erstgespräch anfragen <span aria-hidden="true">↗</span></button>
+</article>
+</div></section>
 <section class="approach"><div class="wrap"><div class="eyebrow">Der Ansatz</div><h2>Praxis. Verantwortung. Wirkung.</h2><div class="principles"><article class="principle"><span>01</span><h3>An echten Situationen arbeiten.</h3><p>Konkrete Herausforderungen aus dem Führungs- und Projektalltag bilden den Ausgangspunkt für Übungen und Reflexion.</p></article><article class="principle"><span>02</span><h3>Klarheit ins Handeln bringen.</h3><p>Strukturierte Methoden helfen, Interessen einzuordnen, Optionen abzuwägen und nächste Schritte zu definieren.</p></article><article class="principle"><span>03</span><h3>Den Transfer mitdenken.</h3><p>Aus Erkenntnissen werden persönliche Vorhaben, die im eigenen Team und Projektkontext angewendet werden können.</p></article></div></div></section>
 <section id="ueber-mich"><div class="wrap about-grid"><div class="about-visual"><small>MW / PERSÖNLICHER ANSATZ</small><div class="large-mw" aria-hidden="true">MW</div><blockquote>Führung verstehen.<br>Verantwortung übernehmen.<br>Umsetzung gestalten.</blockquote></div><div class="about-copy"><div class="eyebrow">Über mich</div><h2>Projektpraxis trifft<br>Führungserfahrung.</h2><p>Meine Perspektive auf Führung beruht auf mehr als zehn Jahren Berufserfahrung, davon über fünf in der Managementberatung. Internationale SAP-Implementierungen, die Verantwortung für Projekte und die Leitung einer Corporate-IT-Abteilung haben meinen Blick dafür geschärft, was Teams brauchen, um auch in komplexen Situationen handlungsfähig zu bleiben.</p><p>Als IPMA-Level-B-zertifizierter Projektmanager verbinde ich strukturiertes Projektmanagement mit eigener disziplinarischer Führungserfahrung.</p><p>Mit MW Leadership & Project Excellence entwickle ich praxisorientierte Trainings für Menschen, die in technischen Organisationen Verantwortung übernehmen – für Projekte, für Teams und für Veränderung.</p><div class="credentials"><span>IPMA Level B</span><span>Internationale Projektpraxis</span><span>Corporate IT Leadership</span></div></div></div></section>
 <section class="contact" id="kontakt"><div class="wrap"><div class="eyebrow">Der nächste Schritt</div><h2>Lass uns über deine<br>Herausforderung sprechen.</h2><p>Ob Projektführung oder die Entwicklung technischer Führungskräfte: Ein unverbindliches Erstgespräch schafft Raum für deinen Bedarf und ein passendes Format.</p><button class="button contact-open" id="contact-open" type="button" aria-haspopup="dialog">Erstgespräch anfragen <span aria-hidden="true">↗</span></button></div></section></main>
@@ -63,18 +114,59 @@ button:focus-visible,.contact-dialog :is(input,select,textarea):focus-visible{ou
 
   const contactTemplates = {
     open: 'Ich möchte besprechen, welches Format zu unserer Herausforderung passt. Es geht um …',
-    project: 'Wir suchen einen Workshop für unsere Projektleiter. Im Projektalltag möchten wir vor allem …',
+    project: 'Ich interessiere mich für Projektmanagement-Coaching. In meinem Projekt geht es gerade um …',
     tech: 'Wir möchten technische Fachkräfte beim Einstieg in die Führung unterstützen. Besonders wichtig ist uns …',
     other: 'Ich würde mich gerne über folgendes Thema austauschen: …'
   };
 
-  contactOpen.addEventListener('click', () => contactDialog.showModal());
+  const offerToggles = [...document.querySelectorAll('.offer-toggle')];
+
+  function openOffer(panelId) {
+    for (const toggle of offerToggles) {
+      const id = toggle.getAttribute('aria-controls');
+      const isOpen = id === panelId;
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      document.getElementById(id).hidden = !isOpen;
+    }
+  }
+
+  for (const toggle of offerToggles) {
+    toggle.addEventListener('click', () => {
+      const id = toggle.getAttribute('aria-controls');
+      const wasOpen = toggle.getAttribute('aria-expanded') === 'true';
+      openOffer(wasOpen ? null : id);
+      const panel = document.getElementById(id);
+      if (!wasOpen && panel.getBoundingClientRect().top >= window.innerHeight) {
+        panel.scrollIntoView({block: 'start'});
+      }
+    });
+  }
+
+  function openLinkedOffer() {
+    const id = window.location.hash.slice(1);
+    if (offerToggles.some(toggle => toggle.getAttribute('aria-controls') === id)) {
+      openOffer(id);
+      document.getElementById(id).scrollIntoView({block: 'start'});
+    }
+  }
+
+  openLinkedOffer();
+  window.addEventListener('hashchange', openLinkedOffer);
+
+  let contactOpener = contactOpen;
+  for (const button of [contactOpen, ...document.querySelectorAll('[data-contact-topic]')]) {
+    button.addEventListener('click', () => {
+      contactOpener = button;
+      contactTopic.value = button.dataset.contactTopic ?? 'open';
+      contactDialog.showModal();
+    });
+  }
   document.getElementById('contact-close').addEventListener('click', () => contactDialog.close());
   contactDialog.addEventListener('close', () => {
     contactForm.reset();
     contactResult.textContent = '';
     contactResult.classList.remove('test-note');
-    contactOpen.focus();
+    contactOpener.focus();
   });
   document.getElementById('contact-template').addEventListener('click', () => {
     if (!contactMessage.value.trim()) contactMessage.value = contactTemplates[contactTopic.value];
